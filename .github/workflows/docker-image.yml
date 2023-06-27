@@ -46,5 +46,5 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Push Docker image
       run: |
-        docker tag myapp:latest ${{ env.DOCKER_USERNAME }}/myapp:latest
-        docker push ${{ env.DOCKER_USERNAME }}/myapp:latest
+        docker tag claims:latest ${{ env.DOCKER_USERNAME }}/claims:latest
+        docker push ${{ env.DOCKER_USERNAME }}/claims:latest
